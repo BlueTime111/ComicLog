@@ -6,6 +6,12 @@ ComicLog 是一款移动优先的漫画进度追踪与剧情回顾应用（React
 
 针对连载漫画阅读场景，ComicLog 提供“进度 + 一句话总结 + 私人补充”的组合体验，帮助你在断更或补番时快速找回剧情上下文。
 
+## 项目演示
+[default.webm](https://github.com/user-attachments/assets/dbff0dff-75d2-4e68-9d51-61c4834104e9)
+
+
+
+
 ## 功能介绍
 
 - 追踪作品与章节阅读进度
