@@ -1,34 +1,34 @@
 # ComicLog
 
-Mobile-first comic recap and tracking app built with React Native + Expo.
+ComicLog 是一款移动优先的漫画进度追踪与剧情回顾应用（React Native + Expo）。
 
-> Chinese version: `README-zh-CN.md`
+[English](README.md) | [简体中文](README-zh-CN.md)
 
-## Why ComicLog
+## 项目简介
 
-ComicLog helps readers keep long-running stories organized by combining progress tracking and chapter-level recap notes.
+针对连载漫画阅读场景，ComicLog 提供“进度 + 一句话总结 + 私人补充”的组合体验，帮助你在断更或补番时快速找回剧情上下文。
 
-## Features
+## 功能介绍
 
-- Track series and chapter reading progress
-- Save one-line shared chapter summaries
-- Add private personal notes per chapter
-- Preview combined recap (shared + private)
-- Search summaries by series/chapter/text
-- Import and export summary packs (JSON)
-- Sort library by recently opened time
-- Local-first runtime with `mock` and `sqlite` data sources
+- 追踪作品与章节阅读进度
+- 记录章节共享总结（一句话）
+- 记录章节私人补充（仅自己可见）
+- 查看合并预览（共享在前，私人在后）
+- 按作品/章节/关键词搜索摘要
+- 导入与导出总结包（JSON）
+- 书库支持按最近打开时间排序
+- 本地优先运行（`mock` / `sqlite`）
 
-## Screenshots
+## 截图（可选）
 
-- Add project screenshots in `designs/`
-- Suggested section names:
-  - Home
-  - Library
-  - Chapter Detail
-  - Import
+建议在 `designs/` 目录补充并在此展示：
 
-## Tech Stack
+- 首页
+- 书库
+- 章节详情
+- 导入页
+
+## 技术栈
 
 - React Native
 - Expo
@@ -36,22 +36,22 @@ ComicLog helps readers keep long-running stories organized by combining progress
 - React Navigation
 - Expo SQLite
 
-## Repository Structure
+## 仓库结构
 
-- `app/` - Expo React Native application (TypeScript)
-- `docs/` - PRD, product specs, and notes
-- `designs/` - visual references and screenshots
+- `app/`：Expo React Native 应用（TypeScript）
+- `docs/`：PRD、产品说明、设计文档
+- `designs/`：视觉参考与截图
 
-## Quick Start
+## 使用方式
 
-Run all commands in `app/`:
+在 `app/` 目录执行：
 
 ```bash
 npm install
 npm run start
 ```
 
-## Run on Device
+运行到不同平台：
 
 ```bash
 npm run android
@@ -59,13 +59,13 @@ npm run ios
 npm run web
 ```
 
-## Environment Flags
+## 运行时参数
 
-- `EXPO_PUBLIC_UI_LOCALE`: `zh-CN` (default) or `en`
-- `EXPO_PUBLIC_DATA_SOURCE`: `mock` or `sqlite`
-- `EXPO_PUBLIC_SQLITE_SEED`: `on` (default) or `off`
+- `EXPO_PUBLIC_UI_LOCALE`：`zh-CN`（默认）或 `en`
+- `EXPO_PUBLIC_DATA_SOURCE`：`mock` 或 `sqlite`
+- `EXPO_PUBLIC_SQLITE_SEED`：`on`（默认）或 `off`
 
-Examples:
+示例：
 
 ```powershell
 $env:EXPO_PUBLIC_UI_LOCALE='en'; npm run start
@@ -83,9 +83,9 @@ set EXPO_PUBLIC_UI_LOCALE=en && npm run start
 EXPO_PUBLIC_UI_LOCALE=en npm run start
 ```
 
-## Testing and Verification
+## 验证命令
 
-Run in `app/`:
+在 `app/` 目录执行：
 
 ```bash
 npm test
@@ -93,24 +93,10 @@ npx tsc --noEmit
 npx expo-doctor
 ```
 
-## Roadmap (MVP)
+## 路线图（MVP）
 
-- [x] Mock-first UI scaffold
-- [x] Core navigation and chapter detail flow
-- [x] Import/export JSON packs
-- [x] SQLite repository path
-- [ ] Better release packaging and deployment docs
-
-## Contributing
-
-1. Fork the repo
-2. Create a feature branch
-3. Run tests and type checks
-4. Open a pull request
-
-## Related Docs
-
-- `AGENTS.md`
-- `docs/prd.md`
-- `docs/product_spec.md`
-- `docs/ui_design.md`
+- [x] Mock 数据驱动的基础 UI
+- [x] 首页/书库/详情核心流程
+- [x] 导入导出 JSON 总结包
+- [x] SQLite 仓储路径与本地化存储
+- [ ] 完善发布与分发文档
